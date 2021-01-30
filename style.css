@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.grid-box{
+    margin: 40px 160px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-box h1{
+    font-family: 'PT Serif', serif;
+    line-height: 47.7px;
+    font-size: 36px;
+    margin: 20px 150px 20px 0;
+}
+section {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 150px;
+    width: 70%;
+}
+
+section h2{
+    font-weight: 600;
+}
+
+section p {
+    font-weight: 400;
+}
+
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 40px 100px;
+    grid-template-areas: 
+    'front main last'
+    'front main last';
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    min-height: 70%;
+    min-width: 150px;
+}
+
+figure{
+    height: fit-content;
+}
+
+
+span {
+    font-family: 'PT Serif', serif;
+    position: absolute;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.9px;
+    margin: auto 5px;
+    height: fit-content;
+}
+
+
+figcaption{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 10px auto;
+}
+
+
+.saba {
+    margin-top: 100px;
+}
+
+.griff{
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+
+@media(max-width: 1190px){
+    .grid-box h1 {
+        margin: 20px 50px 20px 0;
+    }
+
+    section {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1040px){
+   .grid-box {
+       grid-template-columns: auto;
+       margin: 40px 110px;
+   } 
+
+   section {
+       margin-left: 0px;
+       width: 80%; 
+   }
+
+   .grid-container{
+       margin: 40px 50px;
+   }
+}
+@media(max-width: 790px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        'front main'
+        'front main'
+        'front main';
+    }
+
+    .griff {
+        margin-top: auto;
+    }
+/* 
+    .skylah {
+        margin-top: 100px;
+    } */
+
+    .stan {
+        margin-top: 100px
+    }
+}
