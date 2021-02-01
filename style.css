@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 body {
-    margin: 0;
+    margin: 0px;
     background-color: #fafafa;
 }
+
 
 .grid-box{
     margin: 40px 160px;
@@ -16,14 +17,14 @@ body {
     font-family: 'PT Serif', serif;
     line-height: 47.7px;
     font-size: 36px;
-    margin: 20px 150px 20px 0;
+    margin: 20px 150px 20px 10px;
 }
 section {
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 27px;
-    margin-left: 150px;
+    margin-left: 100px;
     width: 70%;
 }
 
@@ -36,10 +37,9 @@ section p {
 }
 
 .grid-container{
-    text-align: center;
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 40px 100px;
+    margin: 40px 140px;
     grid-template-areas: 
     'front main last'
     'front main last';
@@ -49,7 +49,7 @@ img {
     width: 80%;
     height: 80%;
     min-height: 70%;
-    min-width: 150px;
+    min-width: 120px;
 }
 
 figure{
@@ -78,7 +78,6 @@ figcaption{
     line-height: 27px;
     margin: 10px auto;
 }
-
 
 .saba {
     margin-top: 100px;
@@ -123,23 +122,46 @@ footer {
    }
 }
 @media(max-width: 790px){
+    .grid-box {
+        margin: 20% 5% 20% 15%;
+    }
     .grid-container{
-        grid-template-columns: auto auto;
+        text-align: center;
         grid-template-areas: 
-        'front main'
-        'front main'
-        'front main';
+        'front last'
+        'front last'
+        'front last';
+        grid-template-columns: auto auto;
+        margin: 40px auto;
+        column-gap: 0em;
+    }
+    .grid-box h1 {
+        margin-right: 0;
+    }
+    section{
+        width: 100%;
+        margin-left: 0;
+    }
+    section p{
+        font-size: 14px;
     }
 
-    .griff {
-        margin-top: auto;
+    .griff, .shae{
+        margin-top: -30px;
     }
-/* 
-    .skylah {
-        margin-top: 100px;
-    } */
+    
+    .saba {
+        margin-top: 50px;
+    }
+    figure{
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+    }
+   
 
-    .stan {
-        margin-top: 100px
+    img {
+        width: 60%;
     }
 }
