@@ -4,6 +4,7 @@
 body {
     margin: 0px;
     background-color: #fafafa;
+    width: fit-content;
 }
 
 
@@ -37,6 +38,7 @@ section p {
 }
 
 .grid-container{
+    /* max-width: 1300px; */
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 40px 140px;
@@ -132,8 +134,8 @@ footer {
         'front last'
         'front last';
         grid-template-columns: auto auto;
-        margin: 40px auto;
-        column-gap: 0em;
+        margin: 40px 0;
+        
     }
     .grid-box h1 {
         margin-right: 0;
@@ -162,6 +164,12 @@ footer {
    
 
     img {
-        width: 60%;
+       max-width: 20%;
+    }
+}
+
+@media(max-width: 500px){
+    .grid-container{
+        max-width: 300px;
     }
 }
