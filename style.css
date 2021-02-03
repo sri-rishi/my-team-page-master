@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
+html {
+    width: 100%;
+}
 body {
     margin: 0px;
     background-color: #fafafa;
-    width: fit-content;
+    width: 100%;
 }
 
 
@@ -45,6 +47,7 @@ section p {
     grid-template-areas: 
     'front main last'
     'front main last';
+    width: fit-content;
 }
 
 img {
@@ -103,8 +106,14 @@ footer {
         margin: 20px 50px 20px 0;
     }
 
+
+
     section {
         margin-left: 80px;
+    }
+
+    .grid-container{
+        margin: 40px auto;
     }
 }
 
@@ -117,10 +126,6 @@ footer {
    section {
        margin-left: 0px;
        width: 80%; 
-   }
-
-   .grid-container{
-       margin: 40px 50px;
    }
 }
 @media(max-width: 790px){
